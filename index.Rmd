@@ -88,8 +88,8 @@ library(corrtable)
 corrtable::correlation_matrix(df = frag23_sub[,-c(1,2)])
 
 ## regress P1 and E2 on S1
-lm(S1~P1+E2,data=frag23_sub) # calculates the lm model
-model <- lm(S1 ~ P1 + E2, data = frag23_sub) # recalculates lm model and assigns a refrence to it
+lm(S1~P1+E2,data=frag23_sub) # calculates the linear model with P1 AND E2 as features and S1 as output
+model <- lm(S1 ~ P1 + E2, data = frag23_sub) # recalculates linear model and assigns a refrence to it
 summary(model) # prints out relevant details of the produced model
 ```
 
