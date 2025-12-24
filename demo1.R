@@ -95,7 +95,6 @@ plot(frag23_sub$S1,
 
 
 # visual of the regression P1 and E2 on S1
-
 #install.packages("sjPlot")
 library(sjPlot)
 plot_models(model)
